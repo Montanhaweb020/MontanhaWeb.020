@@ -15,7 +15,7 @@ function fecharMenu() {
 
 function abrirOrcamento(servico) {
     const message = encodeURIComponent(`Olá, MontanhaWeb! Tenho interesse em: ${servico}. Pode me passar mais informações?`);
-    window.open(`https://wa.me/${11948070878}?text=${message}`, '_blank');
+    window.open(`https://wa.me/${WHATSAPP}?text=${message}`, '_blank');
 }
 
 function toggleTheme() {
