@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MontanhaWeb — Sites profissionais sob medida para o seu negócio. Landing pages, sites institucionais e lojas virtuais.">
+    <title>MontanhaWeb — Loja de Sites Profissionais</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="inicio">
+
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="fecharMenu()"></div>
+
+    <nav class="sidebar" id="sidebarMenu" aria-label="Menu principal">
+        <button class="sidebar-close" onclick="fecharMenu()" aria-label="Fechar menu">✕</button>
+        <ul class="sidebar-menu-list">
+            <li><a href="index.html" data-nav="inicio">Início</a></li>
+            <li><a href="servicos.html" data-nav="servicos">Serviços</a></li>
+            <li><a href="projetos.html" data-nav="projetos">Projetos</a></li>
+            <li><a href="garantias.html" data-nav="garantias">Garantias</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-box"><img src="montanhaweb.png" alt="Sua Logo" style="max-height: 100%;"></div>
+            <span>MONTANHAWEB<br><small style="font-size: 0.6rem; color: var(--text-secundario);">LOJA DE SITES</small></span>
+        </a>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()" aria-label="Alternar tema">🌙</button>
+            <button class="btn-contato" onclick="abrirOrcamento('Contato geral')">Contato</button>
+            <span class="menu-icon" onclick="abrirMenu()" role="button" aria-label="Abrir menu">☰</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-badge">Sites prontos em até 7 dias úteis</div>
+            <h1>Seu negócio no topo com um <span>site profissional</span></h1>
+            <p>Criamos sites modernos, rápidos e otimizados para Google. Da landing page à loja virtual — tudo sob medida para você vender mais na internet.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <strong>100%</strong>
+                    <span>Responsivo</span>
+                </div>
+                <div class="stat-item">
+                    <strong>SEO</strong>
+                    <span>Incluso</span>
+                </div>
+                <div class="stat-item">
+                    <strong>7 dias</strong>
+                    <span>Prazo médio</span>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="secao-titulo">Escolha seu plano</h2>
+
+        <div class="tabs-container" role="tablist">
+            <button class="tab-btn active" role="tab" onclick="switchTab(event, 'landing-page')">Landing Page</button>
+            <button class="tab-btn" role="tab" onclick="switchTab(event, 'site-institucional')">Site Institucional</button>
+            <button class="tab-btn" role="tab" onclick="switchTab(event, 'loja-virtual')">Loja Virtual</button>
+            <button class="tab-btn" role="tab" onclick="switchTab(event, 'personalizado')">Personalizado</button>
+        </div>
+
+        <div id="landing-page" class="content-card active">
+            <h2>Landing Page</h2>
+            <div class="price-tag">sob consulta</div>
+            <div class="alert-box">Ideal para campanhas, lançamentos e captura de leads com alta conversão.</div>
+            <p class="description">Uma página única e impactante, focada em transformar visitantes em clientes. Design moderno, responsivo para celular e otimizado para anúncios no Google e redes sociais.</p>
+            <div class="info-grid">
+                <div class="sub-card">
+                    <h3>Entrega rápida</h3>
+                    <p>Seu site no ar em até 5 dias úteis após aprovação do briefing.</p>
+                </div>
+                <div class="sub-card">
+                    <h3>Alta conversão</h3>
+                    <p>Layout pensado para gerar contatos, vendas ou inscrições.</p>
+                </div>
+            </div>
+            <ul class="checklist">
+                <li>1 página completa com design exclusivo</li>
+                <li>Responsivo (celular, tablet e desktop)</li>
+                <li>Botão de WhatsApp integrado</li>
+                <li>Formulário de contato</li>
+                <li>Otimização básica para Google (SEO)</li>
+                <li>Hospedagem inclusa por 1 ano</li>
+            </ul>
+            <div class="cta-container">
+                <button class="btn-orcamento" onclick="abrirOrcamento('Landing Page — Sob consulta')">Quero este plano</button>
+                <a href="servicos.html" class="btn-secundario">Ver serviços</a>
+            </div>
+        </div>
+
+        <div id="site-institucional" class="content-card">
+            <h2>Site Institucional</h2>
+            <div class="price-tag">sob consulta</div>
+            <div class="alert-box">Presença profissional completa para empresas, clínicas, escritórios e prestadores de serviço.</div>
+            <p class="description">Site com múltiplas páginas que transmite credibilidade e autoridade. Apresente sua empresa, serviços, equipe e formas de contato de forma elegante e profissional.</p>
+            <div class="info-grid">
+                <div class="sub-card">
+                    <h3>Até 5 páginas</h3>
+                    <p>Home, Sobre, Serviços, Galeria/Portfólio e Contato.</p>
+                </div>
+                <div class="sub-card">
+                    <h3>Modo claro e escuro</h3>
+                    <p>Visual moderno com alternância de tema, como este site.</p>
+                </div>
+            </div>
+            <ul class="checklist">
+                <li>Até 5 páginas personalizadas</li>
+                <li>Design exclusivo alinhado à sua marca</li>
+                <li>Mapa do Google e redes sociais integrados</li>
+                <li>SEO completo para aparecer no Google</li>
+                <li>Hospedagem inclusa por 1 ano</li>
+                <li>Suporte por 30 dias após entrega</li>
+            </ul>
+            <div class="cta-container">
+                <button class="btn-orcamento" onclick="abrirOrcamento('Site Institucional — Sob consulta')">Quero este plano</button>
+                <a href="servicos.html" class="btn-secundario">Ver serviços</a>
+            </div>
+        </div>
+
+        <div id="loja-virtual" class="content-card">
+            <h2>Loja Virtual</h2>
+            <div class="price-tag">sob consulta</div>
+            <div class="alert-box">Venda produtos online 24 horas por dia com checkout seguro e gestão simplificada.</div>
+            <p class="description">E-commerce completo para você vender na internet sem complicação. Catálogo de produtos, carrinho de compras, integração com pagamentos e painel administrativo intuitivo.</p>
+            <div class="info-grid">
+                <div class="sub-card">
+                    <h3>Pagamentos integrados</h3>
+                    <p>Pix, cartão de crédito e boleto via Mercado Pago ou PagSeguro.</p>
+                </div>
+                <div class="sub-card">
+                    <h3>Gestão fácil</h3>
+                    <p>Adicione produtos, controle estoque e acompanhe pedidos pelo celular.</p>
+                </div>
+            </div>
+            <ul class="checklist">
+                <li>Catálogo de produtos</li>
+                <li>Carrinho de compras e checkout seguro</li>
+                <li>Integração com gateways de pagamento</li>
+                <li>Cálculo de frete automático</li>
+                <li>Design responsivo e otimizado para vendas</li>
+                <li>Painel administrativo completo</li>
+                <li>Hospedagem inclusa por 1 ano</li>
+                <li>Treinamento de uso incluso</li>
+            </ul>
+            <div class="cta-container">
+                <button class="btn-orcamento" onclick="abrirOrcamento('Loja Virtual — Sob consulta')">Quero este plano</button>
+                <a href="servicos.html" class="btn-secundario">Ver serviços</a>
+            </div>
+        </div>
+
+        <div id="personalizado" class="content-card">
+            <h2>Projeto Personalizado</h2>
+            <div class="price-tag">Sob consulta</div>
+            <div class="alert-box">Precisa de algo único? Criamos sistemas, portais, áreas de membros e integrações especiais.</div>
+            <p class="description">Para projetos que vão além de um site convencional: sistemas internos, dashboards, integrações com APIs, automações, áreas restritas para clientes e muito mais.</p>
+            <div class="info-grid">
+                <div class="sub-card">
+                    <h3>Escopo flexível</h3>
+                    <p>Do MVP ao sistema completo — adaptamos ao seu orçamento e prazo.</p>
+                </div>
+                <div class="sub-card">
+                    <h3>Tecnologia moderna</h3>
+                    <p>React, Node.js, bancos de dados e integrações sob demanda.</p>
+                </div>
+            </div>
+            <ul class="checklist">
+                <li>Reunião de briefing gratuita</li>
+                <li>Proposta detalhada com escopo e prazos</li>
+                <li>Desenvolvimento ágil com entregas parciais</li>
+                <li>Código documentado e de sua propriedade</li>
+                <li>Suporte e manutenção disponíveis</li>
+            </ul>
+            <div class="cta-container">
+                <button class="btn-orcamento" onclick="abrirOrcamento('Projeto Personalizado')">Solicitar proposta</button>
+                <a href="projetos.html" class="btn-secundario">Ver exemplos</a>
+            </div>
+        </div>
+
+        <section class="processo-section">
+            <h2 class="secao-titulo">Como funciona</h2>
+            <div class="processo-grid">
+                <div class="processo-item">
+                    <div class="processo-num">1</div>
+                    <h3>Briefing</h3>
+                    <p>Você nos conta sobre seu negócio, objetivos e preferências visuais.</p>
+                </div>
+                <div class="processo-item">
+                    <div class="processo-num">2</div>
+                    <h3>Design</h3>
+                    <p>Criamos o layout e enviamos para sua aprovação antes de codificar.</p>
+                </div>
+                <div class="processo-item">
+                    <div class="processo-num">3</div>
+                    <h3>Desenvolvimento</h3>
+                    <p>Programamos seu site com as melhores práticas de performance e SEO.</p>
+                </div>
+                <div class="processo-item">
+                    <div class="processo-num">4</div>
+                    <h3>Entrega</h3>
+                    <p>Publicamos online, configuramos domínio e você começa a vender!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>MontanhaWeb</strong> — Todos os direitos reservados.</p>
+        <p style="margin-top: 8px;">Sites profissionais que elevam seu negócio. <button class="link-text" onclick="abrirOrcamento('Contato MontanhaWeb')">Fale conosco</button></p>
+    </footer>
+
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener" title="WhatsApp" aria-label="Falar no WhatsApp">💬</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

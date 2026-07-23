@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Garantias MontanhaWeb — Compromissos, suporte e transparência em cada projeto.">
+    <title>Garantias — MontanhaWeb</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="garantias">
+
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="fecharMenu()"></div>
+
+    <nav class="sidebar" id="sidebarMenu" aria-label="Menu principal">
+        <button class="sidebar-close" onclick="fecharMenu()" aria-label="Fechar menu">✕</button>
+        <ul class="sidebar-menu-list">
+            <li><a href="index.html" data-nav="inicio">Início</a></li>
+            <li><a href="servicos.html" data-nav="servicos">Serviços</a></li>
+            <li><a href="projetos.html" data-nav="projetos">Projetos</a></li>
+            <li><a href="garantias.html" data-nav="garantias">Garantias</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-box">MW</div>
+            <span>MONTANHAWEB<br><small style="font-size: 0.6rem; color: var(--text-secundario);">LOJA DE SITES</small></span>
+        </a>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()" aria-label="Alternar tema">🌙</button>
+            <button class="btn-contato" onclick="abrirOrcamento('Contato geral')">Contato</button>
+            <span class="menu-icon" onclick="abrirMenu()" role="button" aria-label="Abrir menu">☰</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Nossas Garantias</h1>
+            <p>Transparência e compromisso em cada etapa do seu projeto. Veja o que você pode esperar ao contratar a MontanhaWeb.</p>
+        </div>
+
+        <div class="guarantees-grid">
+            <div class="guarantee-card">
+                <div class="guarantee-icon">✅</div>
+                <h3>Aprovação antes de publicar</h3>
+                <p>Você aprova o design e revisa o site antes de ir ao ar. Fazemos ajustes até ficar do jeito que você precisa.</p>
+            </div>
+
+            <div class="guarantee-card">
+                <div class="guarantee-icon">📱</div>
+                <h3>100% responsivo</h3>
+                <p>Todo site funciona perfeitamente em celular, tablet e computador. Testamos em diferentes tamanhos de tela.</p>
+            </div>
+
+            <div class="guarantee-card">
+                <div class="guarantee-icon">🔒</div>
+                <h3>Site seguro (HTTPS)</h3>
+                <p>Certificado SSL incluso na hospedagem. Seu site e os dados dos visitantes ficam protegidos.</p>
+            </div>
+
+            <div class="guarantee-card">
+                <div class="guarantee-icon">🛠️</div>
+                <h3>Suporte pós-entrega</h3>
+                <p>30 dias de suporte gratuito após a publicação para correções e dúvidas sobre o funcionamento do site.</p>
+            </div>
+
+            <div class="guarantee-card">
+                <div class="guarantee-icon">📋</div>
+                <h3>Orçamento sem compromisso</h3>
+                <p>Você recebe uma proposta clara com escopo, prazo e valor antes de fechar qualquer contrato.</p>
+            </div>
+
+            <div class="guarantee-card">
+                <div class="guarantee-icon">💬</div>
+                <h3>Atendimento via WhatsApp</h3>
+                <p>Comunicação direta e rápida durante todo o projeto. Sem burocracia, sem formulários complicados.</p>
+            </div>
+        </div>
+
+        <div class="cta-banner-alt">
+            <h2>Pronto para começar seu projeto?</h2>
+            <p>Fale conosco e receba um orçamento personalizado sem compromisso.</p>
+            <button class="btn-orcamento" onclick="abrirOrcamento('Quero iniciar meu projeto')">Solicitar orçamento</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>MontanhaWeb</strong> — Todos os direitos reservados.</p>
+        <p style="margin-top: 8px;"><a href="index.html">Voltar ao início</a></p>
+    </footer>
+
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener" title="WhatsApp" aria-label="Falar no WhatsApp">💬</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exemplos de sites da MontanhaWeb — Landing pages, sites institucionais e lojas virtuais.">
+    <title>Projetos — MontanhaWeb</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="projetos">
+
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="fecharMenu()"></div>
+
+    <nav class="sidebar" id="sidebarMenu" aria-label="Menu principal">
+        <button class="sidebar-close" onclick="fecharMenu()" aria-label="Fechar menu">✕</button>
+        <ul class="sidebar-menu-list">
+            <li><a href="index.html" data-nav="inicio">Início</a></li>
+            <li><a href="servicos.html" data-nav="servicos">Serviços</a></li>
+            <li><a href="projetos.html" data-nav="projetos">Projetos</a></li>
+            <li><a href="garantias.html" data-nav="garantias">Garantias</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-box">MW</div>
+            <span>MONTANHAWEB<br><small style="font-size: 0.6rem; color: var(--text-secundario);">LOJA DE SITES</small></span>
+        </a>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()" aria-label="Alternar tema">🌙</button>
+            <button class="btn-contato" onclick="abrirOrcamento('Contato geral')">Contato</button>
+            <span class="menu-icon" onclick="abrirMenu()" role="button" aria-label="Abrir menu">☰</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Exemplos de Projetos</h1>
+            <p>Modelos do tipo de site que desenvolvemos. Cada projeto é personalizado conforme a necessidade do cliente.</p>
+        </div>
+
+        <div class="filter-tabs">
+            <button class="filter-btn active" onclick="filterProjects('all', this)">Todos</button>
+            <button class="filter-btn" onclick="filterProjects('landing', this)">Landing Pages</button>
+            <button class="filter-btn" onclick="filterProjects('institucional', this)">Institucionais</button>
+            <button class="filter-btn" onclick="filterProjects('ecommerce', this)">E-commerce</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-category="institucional">
+                <div class="project-preview p1">🏥</div>
+                <div class="project-info">
+                    <div class="project-type">Site Institucional</div>
+                    <h3>Clínica / Consultório</h3>
+                    <p>Site com apresentação de especialidades, equipe, horários e agendamento via WhatsApp.</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="landing">
+                <div class="project-preview p2">🏋️</div>
+                <div class="project-info">
+                    <div class="project-type">Landing Page</div>
+                    <h3>Academia / Personal</h3>
+                    <p>Página de captura para campanhas de matrícula com formulário e call-to-action.</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ecommerce">
+                <div class="project-preview p3">👗</div>
+                <div class="project-info">
+                    <div class="project-type">Loja Virtual</div>
+                    <h3>Loja de Moda</h3>
+                    <p>E-commerce com catálogo, carrinho, Pix e cálculo de frete automático.</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="institucional">
+                <div class="project-preview p4">⚖️</div>
+                <div class="project-info">
+                    <div class="project-type">Site Institucional</div>
+                    <h3>Escritório Profissional</h3>
+                    <p>Site com áreas de atuação, equipe, blog e formulário de consulta.</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="landing">
+                <div class="project-preview p5">🍕</div>
+                <div class="project-info">
+                    <div class="project-type">Landing Page</div>
+                    <h3>Restaurante / Delivery</h3>
+                    <p>Cardápio digital com pedidos via WhatsApp e promoções sazonais.</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="ecommerce">
+                <div class="project-preview p6">🔧</div>
+                <div class="project-info">
+                    <div class="project-type">Loja Virtual</div>
+                    <h3>Loja de Produtos</h3>
+                    <p>Catálogo com filtros por categoria, estoque e pagamento parcelado.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-banner-alt" style="margin-top: 40px;">
+            <h2>Quer um site como esses?</h2>
+            <p>Conte sobre o seu negócio e montamos um projeto sob medida para você.</p>
+            <button class="btn-orcamento" onclick="abrirOrcamento('Quero um site personalizado')">Solicitar orçamento</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>MontanhaWeb</strong> — Todos os direitos reservados.</p>
+        <p style="margin-top: 8px;"><a href="index.html">Voltar ao início</a></p>
+    </footer>
+
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener" title="WhatsApp" aria-label="Falar no WhatsApp">💬</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
